@@ -1,0 +1,20 @@
+{  
+  "model_str": "allenai/led-large-16384",
+  "encoder_max_length": 8192,
+  "decoder_max_length": 512,
+  "batch_size": 4,
+  "is_input_aug": false,
+  "is_merge_encoders": false,
+  "is_graph_decoder": true,
+  "graph_data_path": "./data/",
+  "output_dir": "./models/graph_dec",
+  "lr": 2e-6,
+  "num_epochs": 20,
+  "GAT_heads": 4,
+  "GAT_embedding_size": 1024,
+  "GAT_dim": 71,
+  "num_beams": 4,
+  "min_length": 100,
+  "length_penalty": 2.0,
+  "no_repeat_ngram_size": 3 
+}
