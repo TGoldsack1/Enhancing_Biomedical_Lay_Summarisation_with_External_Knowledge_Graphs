@@ -48,6 +48,8 @@ Our graph data is stored in `.pkl` files (one for each data split), each of whic
 }
 ```
 
-As covered in the paper, we use data from [UMLS](https://www.nlm.nih.gov/research/umls/index.html) to construct our graphs, which can only be accessed by requesting a lisence. Specifically, use the [Metamap](https://metamap.nlm.nih.gov/) tool to map text to UMLS concepts, we use the [UMLS Metathesaurus](https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/index.html) to retrieve semantic types of concepts, and, finally, we use the [UMLS API](https://documentation.uts.nlm.nih.gov/rest/home.html) to retrieve the definitions of the identified UMLS concepts and semantic types.
 
-Although we are unable to publish the raw UMLS data files we use to construct our graphs (and the concept and semantic type definitions we use to construct our features) due to UMLS licensing restrictions, we will update this repository with the code we use to construct our graphs and features in the near future.
+
+As covered in the paper, we use data from [UMLS](https://www.nlm.nih.gov/research/umls/index.html) to construct our graphs, which can only be accessed upon obtaining a license. Specifically, use the [Metamap](https://metamap.nlm.nih.gov/) tool to map text to UMLS concepts, we use the [UMLS Metathesaurus](https://www.nlm.nih.gov/research/umls/knowledge_sources/metathesaurus/index.html) to retrieve semantic types of concepts, and, finally, we use the [UMLS API](https://documentation.uts.nlm.nih.gov/rest/home.html) to retrieve the definitions of the identified UMLS concepts and semantic types.
+
+The code used to construct our graphs is located in the `graph_construction` directory.
