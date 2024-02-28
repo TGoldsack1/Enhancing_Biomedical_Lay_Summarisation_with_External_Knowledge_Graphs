@@ -28,3 +28,7 @@ These files can be extracted directly from UMLS for which, you need to request [
 To collect the definitions of the used semantic types and concepts, the `collect_definitions.py` file can be used. This file uses the UMLS API to collect the definitions of the semantic types and concepts that we use for node initialisation. Note that you will have to specifiy your UMLS API by editing the file.
 
 The `collect_definitions.py` relies on both the `umls_semtypes.txt` file and another file containing the UMLS concepts you would like to collect definitions for (`umls_concepts_used.txt`). For the latter, the `get_all_concepts.py` file can be used to collect all the concepts used in the article graphs across all data splits.
+
+### 4. Adding features definitions
+
+To speed up our model, we also compute the initial graph features in advance. To do this you can run the `get_graph_features.py` file, which adds the initial graph features (based on SciBERT embeddings) to the graph files and saves them as `.pkl` files. Note that these features relies on the definitions from the previous step.
